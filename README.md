@@ -7,13 +7,13 @@ node paddingCheck.js
  # Test Cases Explained
 Consistent Padding: ["001", "002"]
 
-Both strings are padded with leading zeros and have a length of 3.
-The function finds consistent padding and returns 3.
-Consistent Padding with Longer Number: ["001", "002", "9999"]
-
 The first two strings are padded (length 3), and 9999 is unpadded but does not contradict the padding found.
 The function returns 3 because it only considers the padded numbers.
 Consistent Padding with Mixed: ["01", "02", "003"]
+
+Both strings are padded with leading zeros and have a length of 3.
+The function finds consistent padding and returns 3.
+Consistent Padding with Longer Number: ["001", "002", "9999"]
 
 The first two strings have lengths 2 (unpadded) and the last has length 3 (padded).
 The function finds consistent padding (length 3) and returns 3.
