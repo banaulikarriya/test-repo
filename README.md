@@ -4,7 +4,7 @@ You are required to implement a Javascript function that checks for consistent n
 # Run
 node paddingCheck.js
 
-Test Cases Explained
+ # Test Cases Explained
 Consistent Padding: ["001", "002"]
 
 Both strings are padded with leading zeros and have a length of 3.
