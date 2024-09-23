@@ -16,8 +16,8 @@ The function finds consistent padding and returns 3.
 Consistent Padding with Longer Number: ["001", "002", "9999"]
 
 The first two strings have lengths 2 (unpadded) and the last has length 3 (padded).
-The function finds consistent padding (length 3) and returns 3.
-No Padding Observed: ["1", "2", "3"]
+The function finds consistent padding (length 3) and returns 1.
+No Padding Observed: ["1", "2", "999"]
 
 All strings are unpadded and have lengths of 1.
 Since there are no padded numbers, but valid observations exist, it returns -3 for inconsistent padding.
