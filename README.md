@@ -20,16 +20,19 @@ The function finds consistent padding (length 3) and returns 3.
 No Padding Observed: ["1", "2", "3"]
 
 All strings are unpadded and have lengths of 1.
-Since there are no padded numbers, but valid observations exist, it returns -1 for inconsistent padding.
+Since there are no padded numbers, but valid observations exist, it returns -3 for inconsistent padding.
 Inconclusive Padding: ["999", "9999"]
 
 The strings are both unpadded with lengths of 3 and 4.
-Since there's no padding observed, but valid lengths are found, the smallest non-padded length is 3, and it returns -3.
+Since there's no padding observed, but valid lengths are found, the smallest non-padded length is 2, and it returns -2.
 Inconclusive Padding: ["99", "999", "9999"]
 
-The strings have lengths 2, 3, and 4, all unpadded.
-The function returns -2 since the smallest non-padded length is 2, indicating the inconclusive nature of padding.
-No Observations: []
+The strings have lengths ["01", "002"].
+The function returns -1 
+
+The strings have lengths [].
+The function returns 0 
+
 
 The input is empty, so there are no observations at all.
 The function correctly returns 0 to indicate that no input was provided.
